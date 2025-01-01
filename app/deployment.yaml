@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mnist
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mnist
+  template:
+    metadata:
+      labels:
+        app: mnist
+    spec:
+      containers:
+        - name: mnist
+          image: vicyan614/argo-test:latest
+          ports:
+            - containerPort: 8080

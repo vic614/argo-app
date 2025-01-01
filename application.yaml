@@ -8,7 +8,9 @@ spec:
   source:
     repoURL: https://github.com/vic614/argo-mnist.git
     targetRevision: HEAD
-    path: main
+    path: app
   destination:
     server: https://kubernetes.default.svc
     namespace: mnist
+  syncOptions:
+  - CreateNamespace=true

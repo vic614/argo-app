@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mnist
-          image: vicyan614/argo-test:latest
+          image: vicyan614/mnist:latest
           # resources:
           #   requests:
           #     memory: 1Gi
@@ -23,4 +23,4 @@ spec:
           #     memory: 2Gi
           #     cpu: 2
           ports:
-            - containerPort: 3000
+            - containerPort: 8080

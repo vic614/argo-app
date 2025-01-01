@@ -23,4 +23,4 @@ spec:
               memory: 2Gi
               cpu: 2
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
